@@ -1,3 +1,4 @@
+import { AboutSection } from "../components/AboutMe";
 import { HeroSection } from "../components/HeroSection";
 import { Navbar } from "../components/navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
@@ -14,6 +15,7 @@ export const Home = () => {
       <Navbar />
       {/* Main Content */}
       <HeroSection />
+      <AboutSection />
 
     </div>
   );
