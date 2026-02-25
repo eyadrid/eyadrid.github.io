@@ -11,24 +11,21 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-12 md:py-20 px-4 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+        <h3 className="text-3xl md:text-4xl font-bold mb-10 text-center">
           About <span className="text-primary"> Me</span>
-        </h2>
+        </h3>
 
-        {/* 40/60 Split for more text room */}
         <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-center">
           
           {/* LEFT SIDE - IMAGE */}
           <div className="flex justify-center md:justify-start">
             <div className="relative group animate-float">
-              {/* Frame Bottom-Left */}
               <div className="absolute -bottom-3 -left-3 w-full h-full border-2 border-primary/30 rounded-2xl transition-all duration-500 group-hover:-bottom-1 group-hover:-left-1" />
 
               <div className="relative overflow-hidden rounded-2xl shadow-xl border border-white/10 bg-card">
                 <img
                   src="/profile.jpg"
                   alt="Eya Dridi"
-                  // Slightly smaller height to keep the section compact
                   className="w-60 h-72 md:w-72 md:h-[360px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -38,11 +35,11 @@ export const AboutSection = () => {
           {/* RIGHT SIDE - CONTENT */}
           <div className="flex flex-col space-y-5 text-center md:text-left">
             <div className="space-y-3">
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-                Passionate AI Engineer & Tech Creator
-              </h3>
+                {/* TAILLE MODIFIÉE ICI : text-lg sur mobile, text-xl sur tablette, text-2xl sur desktop */}
+                <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-foreground tracking-tight whitespace-nowrap lg:whitespace-normal">
+                    ICT Engineer Specialized in Artificial Intelligence
+                </h2>
               
-              {/* Reduced text size and margins to save vertical space */}
               <div className="space-y-3 text-muted-foreground leading-snug text-sm md:text-base max-w-2xl">
                 <p>
                   I’m an ICT Engineer specialized in Artificial Intelligence with a strong focus on building scalable, production-ready intelligent systems. I’m passionate about transforming complex problems into practical AI-driven solutions.
@@ -53,7 +50,7 @@ export const AboutSection = () => {
               </div>
             </div>
 
-            {/* INFO GRID (More compact) */}
+            {/* INFO GRID */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 py-2">
               {personalInfo.map((info, index) => (
                 <div key={index} className="flex items-center gap-3 justify-center md:justify-start">
@@ -72,15 +69,15 @@ export const AboutSection = () => {
               ))}
             </div>
 
-            {/* BUTTONS (Visible and aligned) */}
+            {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
-
-              <a
-                href="/cv.pdf"
-                className="w-44 h-11 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary/5 transition-all font-semibold"
-              >
-                Download CV
-              </a>
+                {/* Ajout du bouton manquant pour la cohérence */}
+                <a
+                    href="/cv.pdf"
+                    className="w-44 h-11 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary/5 transition-all font-semibold"
+                >
+                    Download CV
+                </a>
             </div>
           </div>
 
