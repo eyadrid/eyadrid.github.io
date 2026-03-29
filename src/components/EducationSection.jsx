@@ -7,7 +7,7 @@ const educationData = [
     specialization: "Specializing in Smart Image Applications (SIA)",
     period: "09/2022 – 10/2025",
     location: "Ariana, Tunisia",
-    achievements: ["Obtained with honors"],
+    achievements: ["Graduated with honors"],
     icon: <GraduationCap className="w-6 h-6" />,
   },
   {
@@ -25,7 +25,7 @@ const educationData = [
     degree: "Baccalaureate in Mathematics",
     period: "09/2016 – 06/2020",
     location: "Bizerte, Tunisia",
-    achievements: ["Baccalaureate with honors"],
+    achievements: ["Graduated with honors"],
     icon: <Medal className="w-6 h-6" />,
   },
 ];

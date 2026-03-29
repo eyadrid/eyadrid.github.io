@@ -1,4 +1,5 @@
 import {
+  Github,
   Instagram,
   Linkedin,
   Mail,
@@ -37,7 +38,7 @@ export const ContactSection = () => {
         throw new Error("Request failed");
       }
 
-      setSubmitMessage("Message sent!");
+      setSubmitMessage("Thank you for your message. I'll get back to you soon.");
       e.target.reset();
     } catch {
       setSubmitMessage("Could not send the message. Please try again in a moment.");
@@ -107,9 +108,7 @@ export const ContactSection = () => {
                 </div>
               </div>
             </div>
-
-            {/* Réseaux Sociaux (Gauche) */}
-          </div>
+            </div>            
 
           {/* --- COLONNE DROITE : Formulaire --- */}
           <div className="bg-card p-8 rounded-lg shadow-sm border border-border/50">

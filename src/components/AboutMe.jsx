@@ -1,4 +1,4 @@
-import { Cake, MapPin, GraduationCap, Mail } from "lucide-react";
+import { Cake, MapPin, GraduationCap, Mail, Download } from "lucide-react";
 
 export const AboutSection = () => {
   const personalInfo = [
@@ -40,8 +40,7 @@ export const AboutSection = () => {
           {/* RIGHT SIDE - CONTENT */}
           <div className="flex flex-col space-y-5 text-center md:text-left">
             <div className="space-y-3">
-                {/* TAILLE MODIFIÉE ICI : text-lg sur mobile, text-xl sur tablette, text-2xl sur desktop */}
-                <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-foreground tracking-tight whitespace-nowrap lg:whitespace-normal">
+                <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-foreground tracking-tight">
                     ICT Engineer Specialized in Artificial Intelligence
                 </h2>
               
@@ -76,11 +75,14 @@ export const AboutSection = () => {
 
             {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
-                {/* Ajout du bouton manquant pour la cohérence */}
                 <a
-                    href="/cv.pdf"
-                    className="w-44 h-11 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary/5 transition-all font-semibold"
+                    href="/cv.pdf"              // Path to file in /public folder
+                    download="Dridi_Eya_Resume.pdf" // This name is what the user will see when saved
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-44 h-11 flex items-center justify-center gap-2 rounded-full border border-primary text-primary hover:bg-primary/5 transition-all font-semibold group"
                 >
+                    <Download className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
                     Download CV
                 </a>
             </div>

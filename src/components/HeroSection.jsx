@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, Code2 } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -25,8 +25,6 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-            
-            
             <a 
               href="#contact" 
               className="cosmic-button w-44 bg-secondary border-secondary hover:bg-secondary/80 text-center"
@@ -41,6 +39,51 @@ export const HeroSection = () => {
             >
               View My Work
             </a>
+          </div>
+
+          {/* Social Links Section - Unified Colors */}
+          <div className="pt-8 opacity-0 animate-fade-in-delay-4">
+            <div className="flex space-x-8 justify-center items-center">
+              
+              {/* LinkedIn */}
+              <a 
+                href="https://www.linkedin.com/in/dridieya/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all duration-300 transform hover:scale-110"
+              >
+                <Linkedin size={28} />
+              </a>
+
+              {/* GitHub */}
+              <a 
+                href="https://github.com/eyadrid" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all duration-300 transform hover:scale-110"
+              >
+                <Github size={28} />
+              </a>
+
+              {/* HackerRank */}
+              <a 
+                href="https://www.hackerrank.com/profile/eya_dridi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all duration-300 transform hover:scale-110"
+              >
+                <Code2 size={28} />
+              </a>
+
+              {/* Email */}
+              <a 
+                href="mailto:eya.dridi@supcom.tn" 
+                className="text-muted-foreground hover:text-primary transition-all duration-300 transform hover:scale-110"
+              >
+                <Mail size={28} />
+              </a>
+
+            </div>
           </div>
           
         </div>

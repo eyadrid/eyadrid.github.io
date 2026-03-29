@@ -21,8 +21,8 @@ const experiences = [
     period: "02/2025 – 07/2025",
     location: "Tunis, Tunisia",
     description: [
-      "Developed an intelligent patient data deduplication solution to enhance data quality and consistency across large-scale databases.", 
-      "Implemented and optimized the dedupe library for accurate record linkage, built interactive UI components using Flask for data visualization, and contributed to testing, validation, and technical documentation."
+      "Developed an intelligent patient data deduplication system to enhance data quality and consistency across large-scale healthcare databases.",
+      "Leveraged the dedupe library for accurate record linkage and built Flask-based interfaces to facilitate system interaction and results visualization, while contributing to testing, validation, and technical documentation."
     ],
     tags: ["Python", "Dedupe Library", "Flask", "Oracle DB"]
   },

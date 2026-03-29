@@ -3,8 +3,8 @@ import { Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Multi-Agent Dental System",
-    description: "A conversational AI system for managing dental appointments, powered by LangGraph and llama-3.3-70b-versatile. This project demonstrates a multi-agent architecture where specialized agents work together to handle different appointment-related tasks through natural language interactions.",
+    title: "Dental Appointment System",
+    description: "A conversational AI system for managing dental appointments, powered by LangGraph and llama-3.3. This project demonstrates a multi-agent architecture where specialized agents work together to handle different appointment-related tasks through natural language interactions.",
     image: "https://www.bookingpressplugin.com/wp-content/uploads/2023/03/the-top-appointment-scheduling-software-features-for-dental-practices.webp",
     tags: ["Pyton", "LangGraph", "Llama 3.3", "FastAPI", "Streamlit"],
     github: "https://github.com/eyadrid/Dental-Appointment-System",
@@ -14,7 +14,7 @@ const projects = [
     title: "AI News Aggregator",
     description: "An automated pipeline that scrapes AI content from YouTube and RSS feeds, summarizes it via LLMs, and delivers personalized daily digests through Gmail. It includes a curation agent that ranks articles based on user preferences.",
     image: "https://tse1.mm.bing.net/th/id/OIP.MOuAAMr0R4eoJheB6OQQwwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-    tags: ["Python", "Groq LLM", "PostgreSQL", "GitHub Actions", "railway"],
+    tags: ["Python", "PostgreSQL", "GitHub Actions", "railway"],
     github: "https://github.com/eyadrid/ai-news-hub",
   },
   {
@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Header de section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Featured <span className="text-primary">Projects</span>
           </h2>
           <div className="h-1.5 w-20 bg-primary/20 mx-auto rounded-full relative">
@@ -93,6 +93,8 @@ export const ProjectsSection = () => {
                   <div className="pt-6 border-t border-border/30">
                     <a
                       href={project.github}
+                      target="_blank"             // Opens in new tab
+                      rel="noopener noreferrer"   // Security best practice
                       className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-bold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
                     >
                       <Github className="w-4 h-4" />
