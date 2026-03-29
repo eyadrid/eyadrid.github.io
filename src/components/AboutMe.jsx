@@ -76,8 +76,8 @@ export const AboutSection = () => {
             {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
                 <a
-                    href="/cv.pdf"              // Path to file in /public folder
-                    download="Dridi_Eya_Resume.pdf" // This name is what the user will see when saved
+                    href="/Dridi_Eya_Resume.pdf"              
+                    download="Dridi_Eya_Resume.pdf" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-44 h-11 flex items-center justify-center gap-2 rounded-full border border-primary text-primary hover:bg-primary/5 transition-all font-semibold group"
