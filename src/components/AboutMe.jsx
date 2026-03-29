@@ -11,9 +11,14 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-12 md:py-20 px-4 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
-        <h3 className="text-3xl md:text-4xl font-bold mb-10 text-center">
-          About <span className="text-primary"> Me</span>
-        </h3>
+        <div className="text-center mb-10">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+            About <span className="text-primary"> Me</span>
+          </h3>
+          <div className="h-1.5 w-20 bg-primary/20 mx-auto rounded-full relative">
+            <div className="absolute inset-0 bg-primary w-1/2 rounded-full" />
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-center">
           
